@@ -3,11 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.1.1">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@200;300&family=Dancing+Script&display=swap" >
+    <script src="https://kit.fontawesome.com/c268cdfe8e.js" crossorigin="anonymous"></script>
     <link href="./assets/css/style.css" rel="stylesheet">
 
     <title>5 Day Weather Forecast</title>
@@ -17,25 +16,19 @@
     <div class="card"></div>
 
     <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow" style="background-color: #414346;">
-      <nav class="navbar navbar-light bg-light">
-        <div class="navbar-brand col-md-3 col-lg-2 mr-0 px-3">Search for a City:</div>
-        <form class="form-inline">
-          <input class="form-control form-control-dark" type="search" placeholder="Los Angeles" aria-label="Search">
-          <button class="btn">Search</button>
-        </form>
-      </nav>
+      <nav class="navbar navbar-light bg-light"></nav>
     </header>
 
     <h1>Weather Forecast</h1>
 
     <div class="container">
-      <div class="current-data">
+      <div class="currentData">
         <h2 class="temp">
           16&#176;
         </h2>
         
         <div class="city-time">
-          <h3 class="city">Los Angeles</h3>
+          <h3 class="cityName">Los Angeles</h3>
           <span class="time">
             12:30
           </span>
@@ -47,12 +40,52 @@
         <div class="weather">
           <img src="./assets/images/weather/64x64/day/113.png" alt="Icon of a sun">
         </div>
-      </div>
-    </div>
 
+        <span class="condition">
+          Sunny
+        </span>
+      </div>
     
+
+      <div class="panel">
+        <form id="locationInput">
+          <input 
+          type="text" 
+          class="search"
+          placeholder="Los Angeles">
+
+          <button type="submit" class="sumbit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </div>
+
+      <ul class="cities">
+        <li class="city">New York</li>
+        <li class="city">Miami</li>
+        <li class="city">Los Angeles</li>
+        <li class="city">Chicago</li>
+      </ul>
+
+      <ul class="details">
+        <li>
+          <span>Sunny:</span>
+          <span class="sun">80%</span>
+        </li>
+
+        <li>
+          <span>Humidity:</span>
+          <span class="humidity">20%</span>
+        </li>
+
+        <li>
+          <span>Wind Speed:</span>
+          <span class="wind">2MPH</span>
+        </li>
+      </ul>
+    </div>
   
-    
+   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
