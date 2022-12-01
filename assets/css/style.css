@@ -1,6 +1,54 @@
 body {
-    font-size: .875rem;
-    font-family: 'Anek Devanagari', sans-serif;
-  
-  }
- 
+  font-size: 24px;
+  font-family: "Anek Devanagari";
+}
+
+form {
+ padding-top: 21px;
+ width: 100%;
+}
+
+h1 {
+  margin-top: 50px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+.navbar-brand {
+  margin: 10px;
+  color:#fff;
+  padding-top: 25px ;
+  font-size: 25px;
+} 
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control {
+  width: 500%;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+.btn {
+  margin-left: 10px;
+}
