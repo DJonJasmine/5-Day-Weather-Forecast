@@ -24,3 +24,7 @@ h1 {
   background: #111;
 }
 
+.container {
+  min-height: 100vh;
+  background-image: url(/assets/images/weather/64x64/);
+}
