@@ -11,12 +11,12 @@ const windSpeed = document.querySelector('.windSpeed');
 const locationSearch = document.querySelector('.locationSearch');
 const search = document.querySelector('.search')
 const btn = document.querySelector('.submit')
-const cities = document.querySelector('city')
+const cities = document.querySelector('.city')
 
 //Default city on load page
 let cityInput = 'Los Angeles'
 
-cities.forEach((city) => {
+Array.from(cities).forEach((city) => {
     city.addEventListener('click', (e) => {
         cityInput = e.target.innerHTML;
 
@@ -26,7 +26,7 @@ cities.forEach((city) => {
     })
 });
 
-form.addEventListener('sumbit', (e) => {
+loca.addEventListener('submit', (e) => {
     if(search.value.length === 0) {
         alert('Please type in a city name')
     } else {
