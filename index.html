@@ -19,45 +19,49 @@
         Weather Forecast
       </h1>
     </header>
-
+   
     <div class="container">
       <div class="currentData">
-        <h2 class="temp">
-          16&#176;
-        </h2>
+        <div class></div>
         
-        <div class="city-time">
-          <h3 class="cityName">Los Angeles</h3>
-          <span class="time">
-            12:30
-          </span>
-          <span class="date">
-            Monday Sept 21
-          </span>
-        </div>
+        <div>
+          <div class="city-time">
+            <div class="temp">
+              16&#176;
+            </div>
+            <h3 class="cityName">Los Angeles</h3>
+            <span class="time">
+              12:30
+            </span>
+            <span class="date">
+              Monday Sept 21
+            </span>
+          </div>
 
-        <div class="weather">
-          <img src="./assets/images/weather/64x64/day/113.png" alt="Icon of a sun">
         
-          <span class="condition">
-            Sunny
-          </span>
+
+          <div class="weather">
+            <img src="./assets/images/weather/64x64/day/113.png" class="icon" alt="Icon of a sun">
+        
+            <span class="condition">
+              Sunny
+            </span>
+          </div>
         </div>
       </div>
-    
-
+      
       <div class="panel">
-        <form id="locationInput">
-          <input 
-          type="text" 
-          class="search"
-          placeholder="Los Angeles">
+        <form id="locationSearch">
+          <input type="text" class="search" placeholder="Los Angeles">
+          
 
           <button type="submit" class="sumbit">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </form>
-
+      </div>
+      
+      <div class="savedCities">
         <ul class="cities">
           <li class="city">New York</li>
           <li class="city">Miami</li>
