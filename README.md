@@ -13,7 +13,7 @@ Use this weather day forecast to plan out a trip or just to view the weather for
 
 ## Usage
 
-For usage, use the search bar and input a city name. When click the search bar the city that was inputte will display the weather for the week. Your previous city inputs will be saved and displayed on the page
+For usage, use the search bar and input a city name. When click the search bar the city that was inputted will display the weather for the week. Your previous city inputs will be saved and displayed on the page
 
 
 ## Support
