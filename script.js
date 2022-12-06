@@ -13,6 +13,7 @@ const search = document.querySelector('.search')
 const btn = document.querySelector('.submit')
 const cities = document.querySelector('.city')
 
+
 //Default city on load page
 let cityInput = 'Los Angeles'
 
@@ -26,11 +27,11 @@ Array.from(cities).forEach((city) => {
     })
 });
 
-loca.addEventListener('submit', (e) => {
+btn.addEventListener('submit', (e) => {
     if(search.value.length === 0) {
         alert('Please type in a city name')
     } else {
-        cityInput = search.val()
+        cityInput = search.value
         fetchWeatherData()
         search.value = ''
         app.style.opacity = "0"
@@ -54,7 +55,7 @@ function dayOfTheWeek(day, month, year) {
 };
 
 function fetchWeatherData() {
-    fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,daily&appid={API key}=${cityInput}`)
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityInput}&appid=7b86fbd532d9de0795ab4076e7facf89`)
     .then(response => response.json())
     .then(data => {
     //  console.log(data);
