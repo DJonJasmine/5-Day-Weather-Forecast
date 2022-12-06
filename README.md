@@ -3,7 +3,7 @@
 
 ## Description
 
-Use this weather day forecast to plan out a trip or just to view the weather for the week! Dress for the appropaite weather and dont be left out in the cold!
+Use this weather day forecast to plan out a trip or just to view the weather for the week! Dress for the appropriate weather and don't be left out in the cold!
 
 ## Badges
 
